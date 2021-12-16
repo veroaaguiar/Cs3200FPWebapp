@@ -102,7 +102,16 @@ const UserFormEditor = () => {
                 Create
             </Button>}
             <div>
-            {/*<Link to={`/shippingAddresses/${user.addressId}`} className="user list btn">Shipping Address(es) for this User:</Link>*/}
+                {/*{addresses.length > 0 &&*/}
+                {/*<div>*/}
+                {/*    <h4>Addresses for User:</h4>*/}
+                {/*    <ul>*/}
+                {/*        { user.addresses.map(shippingAddress =>*/}
+                {/*            <li key={shippingAddress.aId}>*/}
+                {/*                <Link to={`/shippingAddresses/${user.addresses.aId}`}>*/}
+                {/*            </li>)}*/}
+                {/*    </ul>*/}
+                {/*</div>}*/}
             </div>
              <Link to={`/passports/${user.passportId}`} className="user list btn">Passport for this User:</Link>
             {/*{JSON.stringify(user)}*/}
