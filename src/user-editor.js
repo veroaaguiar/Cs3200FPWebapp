@@ -69,6 +69,13 @@ const UserFormEditor = () => {
                         ({...user, password: e.target.value}))}
                 value={user.password}/>
             <br/>
+            <label>Username: </label>
+            <input
+                onChange={(e) =>
+                    setUser(user =>
+                        ({...user, username: e.target.value}))}
+                value={user.username}/>
+            <br></br>
             <label>Email: </label>
             <input
                 onChange={(e) =>

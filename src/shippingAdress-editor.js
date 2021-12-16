@@ -56,6 +56,19 @@ const ShippingAddressFormEditor = () => {
                     setShippingAddress(ShippingAddress =>
                         ({...shippingAddress, address: e.target.value}))}
                 value={shippingAddress.address}/>
+            <br></br>
+            <label>Passport assigned to ship to this address: &nbsp;</label>
+            {
+                shippingAddress.passportNumber &&
+                    <input
+                        readOnly={true}
+                        value={shippingAddress.passportNumber.passportNumber}/>
+            }
+            {shippingAddress.passportNumber == "null" &&
+                <input type = "text"
+                       value = "None Assigned"/>
+
+            }
             <br/>
             <Button onClick={() => {
                 navigate("/")}}>
